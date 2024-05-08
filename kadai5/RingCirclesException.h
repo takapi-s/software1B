@@ -3,14 +3,15 @@
 #include <exception>
 #include <string>
 
-class CircleException : public std::exception {
+class RingCirclesException : public std::exception {
 private:
     std::string message; // エラーメッセージ
     
 public:
-    CircleException(const std::string& msg) : message(msg) {};
-    virtual ~CircleException() throw() {};
+    RingCirclesException(const std::string& msg) : message(msg) {};
+    virtual ~RingCirclesException() throw() {};
     void printStackTrace() const {
-        std::cerr << "Error in generating Circle : " << message << std::endl;
-    }
-}
+        std::cerr << "Error in RingCircles ... " << message << std::endl;
+        
+    };
+};
