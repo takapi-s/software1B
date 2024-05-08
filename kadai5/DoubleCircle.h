@@ -10,5 +10,6 @@ public:
     DoubleCircle(); // デフォルトコンストラクタ
     DoubleCircle(double cx, double cy, double r, std::string c1, std::string c2, double ratio); // 別の形式のコンストラクタ
     void setPosition(double x, double y);
+    void setRadius(double r);
     virtual void draw(svg* svgObj) override; // draw() 関数のオーバーライド
 };

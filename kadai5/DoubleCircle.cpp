@@ -14,6 +14,11 @@ void DoubleCircle::setPosition (double x, double y) {
     c_2.setPosition(x,y);
 }
 
+void DoubleCircle::setRadius (double r){
+    c_1.setRadius(r);
+    c_2.setRadius(r);
+}
+
 void DoubleCircle::draw(svg* svgObj) {
     c_1.draw(svgObj);
     c_2.draw(svgObj);
