@@ -14,20 +14,20 @@ void svg::close() {
     svg::ofs.close();
 }
 
-void svg::drawCircle(int x, int y, int rad, std::string color) {
-    ofs << "<circle cx='" << x << "' cy='" << y << "' r='" << rad << "' fill='" << color << "'/>";
-    ofs << std::endl; // 改行
-}
+// void svg::drawCircle(int x, int y, int rad, std::string color) {
+//     ofs << "<circle cx='" << x << "' cy='" << y << "' r='" << rad << "' fill='" << color << "'/>";
+//     ofs << std::endl; // 改行
+// }
 
-void svg::drawCircle(double cx, double cy, double r, std::string color, double stroke_width) {
-    if (stroke_width > 0) {
-        svg::ofs <<  "<circle cx='" << cx << "' cy='" << cy << "' r='" << r
-        << "' stroke='" << color << "' stroke-width='" << stroke_width << "' fill='none'/>" << std::endl;
-    } else {
-        svg::ofs <<  "<circle cx='" << cx << "' cy='" << cy << "' r='" << r
-        << "' fill='" << color + "'/>" << std::endl;
-    }
-}
+// void svg::drawCircle(double cx, double cy, double r, std::string color, double stroke_width) {
+//     if (stroke_width > 0) {
+//         svg::ofs <<  "<circle cx='" << cx << "' cy='" << cy << "' r='" << r
+//         << "' stroke='" << color << "' stroke-width='" << stroke_width << "' fill='none'/>" << std::endl;
+//     } else {
+//         svg::ofs <<  "<circle cx='" << cx << "' cy='" << cy << "' r='" << r
+//         << "' fill='" << color + "'/>" << std::endl;
+//     }
+// }
 
 // void svg::drawRect(int x, int y, int width, int height, std::string color, int stroke_width) {
 //     if (stroke_width > 0) {

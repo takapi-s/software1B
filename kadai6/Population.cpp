@@ -32,7 +32,5 @@ vector<string> Population::split(string& str, char delim) { // delim を区切�
         current = found + 1;
     }
     res.push_back(string(str, current, str.size() - current));
-
-    printf("\n");
     return res;
 }

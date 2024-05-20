@@ -1,4 +1,4 @@
-PROGRAM = test
+PROGRAM = BarGraph
 OBJS = Population.o BarGraph.o svg.o 
 
 CXX = g++
